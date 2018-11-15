@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'hanami',       '~> 1.2'
 gem 'hanami-model', '~> 1.2'
-
+gem 'hanami-pagination'
 gem 'sqlite3'
 
 group :development do
@@ -23,5 +23,6 @@ group :test do
 end
 
 group :production do
-  # gem 'puma'
+  #gem 'puma'
+  #gem 'pg'
 end

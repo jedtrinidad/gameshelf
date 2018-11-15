@@ -1,0 +1,1 @@
+GameRepository.enable_pagination!

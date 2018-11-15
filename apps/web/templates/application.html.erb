@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Web</title>
+    <title><%= page_title %> - Gameshelf</title>
     <%= favicon %>
+    <%= stylesheet 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css' %>
+    <%= stylesheet 'https://fonts.googleapis.com/css?family=Poppins' %>
+    <%= stylesheet 'gameshelf' %>
+    <%= javascript 'https://use.fontawesome.com/releases/v5.3.1/js/all.js' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <section class="hero is-dark is-small">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-size-5">Gameshelf</h1>
+            <p class="subtitle is-size-7">beta (heroku experiment #1)</p>
+            
+        </div>
+    </div>
+    <div class="hero-foot">
+        <nav class="tabs is-boxed">
+          <div class="container">
+          <ul>
+            <li class="is-active">
+              <a href="/">Home</a>
+            </li>
+            <li><a>Games</a></li>
+          </ul>
+          </div>
+        </nav>
+    </div>
+    </section>
     <%= yield %>
   </body>
 </html>

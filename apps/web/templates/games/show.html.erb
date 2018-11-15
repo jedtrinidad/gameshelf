@@ -1,0 +1,26 @@
+<section class="section">
+    <div class="container">
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <h1 class="title"><%= game.title %></h1>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="box">
+            <div class="columns">
+                <div class="column">
+                    <p class="is-size-6">Developer: <%= game.developer %></p>
+                    <p class="is-size-6">Platform: <%= game.platform %></p>
+                    <p class="is-size-6">Release Date: <%= format_date(game.released_at) %></p>
+                </div>
+                <div class="column">
+                    <p class="is-size-6">Created At: <%= game.created_at %></p>
+                    <p class="is-size-6">Updated At: <%= game.updated_at %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

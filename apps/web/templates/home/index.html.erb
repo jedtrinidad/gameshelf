@@ -1,0 +1,38 @@
+<section class="section">
+    <div class="container">
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item">
+                    <h1 class="title">Games</h1>
+                </div>
+            </div>
+            <div class="level-right">
+                <div class="level-item">
+                    <a href="<%= routes.new_game_path %>" class="button is-rounded is-outlined">Add Game</a>
+                </div>
+            </div>
+        </div>
+
+        <table class="table is-fullwidth is-hoverable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Developer</th>
+                    <th>Platform</th>
+                    <th>Release Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% games.each do |game| %>
+                <tr>
+                   <td><a href="<%= routes.game_path(id: game.id) %>"><%= game.title %></a></td>
+                   <td><%= game.developer %></td>
+                   <td><%= game.platform %></td>
+                   <td><%= format_date(game.released_at) %></td>
+                </tr>
+                <% end %>
+            </tbody>
+        </table>
+        <%= paginate(:home) %>
+    </div>
+</section>

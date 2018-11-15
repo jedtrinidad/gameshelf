@@ -1,0 +1,20 @@
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half">
+            <% unless params.valid? %>
+              <div class="notification is-warning">
+              <p class="is-size-5">Submission Has Errors</p>
+              <ul>
+              <% params.error_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+              </div>
+            <% end %>
+                <h1 class="title">Add New Game</h1>
+                <%= new_game_form %>
+            </div>
+        </div>
+    </div>
+</section>
