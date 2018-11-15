@@ -4,7 +4,7 @@ gem 'rake'
 gem 'hanami',       '~> 1.2'
 gem 'hanami-model', '~> 1.2'
 gem 'hanami-pagination'
-gem 'sqlite3'
+
 
 group :development do
   # Code reloading
@@ -23,6 +23,6 @@ group :test do
 end
 
 group :production do
-  #gem 'puma'
-  #gem 'pg'
+  gem 'puma'
+  gem 'pg'
 end
