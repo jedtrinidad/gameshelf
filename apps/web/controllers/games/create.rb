@@ -19,7 +19,7 @@ module Web::Controllers::Games
         released_at = params.get(:new_game, :released_at)
 
         save_game(title, developer, platform, released_at)
-        redirect_to '/'
+        redirect_to routes.home_path
       else
         self.status = 422
       end
