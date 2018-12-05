@@ -4,7 +4,7 @@ gem 'rake'
 gem 'hanami',       '~> 1.2'
 gem 'hanami-model', '~> 1.2'
 gem 'hanami-pagination'
-# gem 'sqlite3'
+gem 'sqlite3'
 
 group :development do
   # Code reloading
